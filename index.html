@@ -1,0 +1,58 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>Analogic</title>
+  <link rel="stylesheet" href="src/styles.css" />
+</head>
+<body>
+  <main class="panel">
+    <header class="panel__header">
+      <div class="eyebrow">ANALOGIC</div>
+      <div class="subtitle">Film character for Photoshop</div>
+    </header>
+
+    <section class="section">
+      <label class="label" for="look">LOOK</label>
+      <select id="look">
+        <option value="convenience-1997">1997 / Convenience Store</option>
+        <option value="indie-tour-2004">2004 / Indie Tour</option>
+        <option value="sunday-slide">Sunday Slide</option>
+      </select>
+    </section>
+
+    <section class="section">
+      <div class="section-title">CHARACTER</div>
+      <label class="control"><span>Intensity</span><input id="intensity" type="range" min="0" max="100" value="70" /></label>
+    </section>
+
+    <section class="section">
+      <div class="section-title">FILM</div>
+      <label class="control"><span>Grain</span><input id="grainAmount" type="range" min="0" max="100" value="50" /></label>
+      <label class="control"><span>Grain Size</span><input id="grainSize" type="range" min="0" max="100" value="45" /></label>
+    </section>
+
+    <section class="section">
+      <div class="section-title">LIGHT</div>
+      <label class="control"><span>Halation</span><input id="halation" type="range" min="0" max="100" value="20" /></label>
+      <label class="control"><span>Bloom</span><input id="bloom" type="range" min="0" max="100" value="15" /></label>
+    </section>
+
+    <section class="actions">
+      <button id="regenerate" class="button button--secondary">Regenerate Grain</button>
+      <button id="apply" class="button button--primary" disabled>Apply</button>
+    </section>
+
+    <footer class="status" id="status" aria-live="polite">Checking document…</footer>
+  </main>
+
+  <script src="src/presets.js"></script>
+  <script src="src/state.js"></script>
+  <script src="src/photoshop/document.js"></script>
+  <script src="src/engine/tone.js"></script>
+  <script src="src/engine/grain.js"></script>
+  <script src="src/engine/halation.js"></script>
+  <script src="src/engine/pipeline.js"></script>
+  <script src="src/main.js"></script>
+</body>
+</html>

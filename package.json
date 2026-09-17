@@ -1,0 +1,9 @@
+{
+  "name": "plugin-analogic-ps",
+  "version": "0.0.1",
+  "private": true,
+  "description": "Photoshop UXP plugin for analog photographic character.",
+  "scripts": {
+    "test": "echo \"No automated tests yet\""
+  }
+}

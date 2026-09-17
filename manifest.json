@@ -1,0 +1,23 @@
+{
+  "manifestVersion": 5,
+  "id": "com.analogic.photoshop",
+  "name": "Analogic",
+  "version": "0.0.1",
+  "main": "index.html",
+  "host": {
+    "app": "PS",
+    "minVersion": "25.0.0"
+  },
+  "entrypoints": [
+    {
+      "type": "panel",
+      "id": "analogicPanel",
+      "label": { "default": "Analogic" },
+      "minimumSize": { "width": 240, "height": 360 },
+      "preferredDockedSize": { "width": 280, "height": 520 },
+      "preferredFloatingSize": { "width": 320, "height": 600 },
+      "maximumSize": { "width": 1200, "height": 1600 }
+    }
+  ],
+  "icons": []
+}
